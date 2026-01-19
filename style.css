@@ -1,0 +1,98 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #1a1a1a;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+    color: #ffcc00;
+    text-shadow: 4px 4px 0px #8b0000;
+    letter-spacing: 5px;
+}
+
+/* Container para magkatabi ang Canvas at Rules */
+.game-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.canvas-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hud {
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+    border: 4px solid #fff;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: #00ff00;
+    box-shadow: 5px 5px 0px rgba(0,0,0,0.5);
+}
+
+.stat span {
+    color: #fff;
+}
+
+canvas {
+    border: 4px solid #fff;
+    background-color: #116b09;
+    image-rendering: pixelated;
+    box-shadow: 10px 10px 0px rgba(0,0,0,0.5);
+    width: 960px; /* Default width based on tileMap */
+    height: 640px; /* Default height based on tileMap */
+}
+
+/* Design ng Rules sa Gilid */
+.sidebar {
+    width: 250px;
+    background-color: #222;
+    border: 4px solid #fff;
+    padding: 20px;
+    color: white;
+    box-shadow: 10px 10px 0px rgba(0,0,0,0.5);
+}
+
+.sidebar h2 {
+    margin-top: 0;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+    text-align: center;
+    color: gold;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.icon {
+    font-size: 24px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
